@@ -3,4 +3,4 @@ pandas
 seaborn
 flask
 
--e .
+#-e .
