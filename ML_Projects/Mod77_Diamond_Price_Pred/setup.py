@@ -21,5 +21,6 @@ setup(
     author = 'Monika',
     author_email = 'mgadewar12@gmail.com',
     install_requires = get_requirements('requirements.txt'),
-    packages = find_packages()
+    packages=find_packages(where='src'),            # Automatically finds all packages in 'src'
+    package_dir={'': 'src'},                        # Set 'src' as the root directory for packages
 )
