@@ -1,4 +1,4 @@
-# Aim- Diamond Price Prediction
+# Aim - Diamond Price Prediction
 
 First Advanced Modular structure Project
 
