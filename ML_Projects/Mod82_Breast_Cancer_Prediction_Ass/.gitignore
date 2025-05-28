@@ -1,1 +1,7 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment named 'aenv'
+aenv/
 
