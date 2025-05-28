@@ -1,0 +1,16 @@
+[ 2025-05-03 22:18:34,716 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-05-03 22:18:34,720 ] 97 werkzeug - INFO -  * Debugger PIN: 236-567-617
+[ 2025-05-03 22:18:43,318 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/May/2025 22:18:43] "GET /predict HTTP/1.1" 200 -
+[ 2025-05-03 22:19:26,922 ] 45 root - INFO - get_data_as_dataframe(): STARTS
+[ 2025-05-03 22:19:26,940 ] 60 root - INFO - New data df:    cement  blast_furnace_slag  fly_ash  water  superplasticizer  coarse_aggregate  fine_aggregate  age
+0   332.5               142.5      0.0  228.0               0.0             932.0           594.0  270
+[ 2025-05-03 22:19:26,940 ] 61 root - INFO - get_data_as_dataframe(): ENDS
+[ 2025-05-03 22:19:26,941 ] 80 root - INFO - predict_cement_strength(): STARTS
+[ 2025-05-03 22:19:28,807 ] 88 root - INFO - New cement data before transformation:    cement  blast_furnace_slag  fly_ash  water  superplasticizer  coarse_aggregate  fine_aggregate  age
+0   332.5               142.5      0.0  228.0               0.0             932.0           594.0  270
+[ 2025-05-03 22:19:28,807 ] 102 root - INFO - Error occurred in predict_cement_strength()
+[ 2025-05-03 22:19:28,834 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/May/2025 22:19:28] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2025-05-03 22:19:28,966 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/May/2025 22:19:28] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2025-05-03 22:19:28,983 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/May/2025 22:19:28] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2025-05-03 22:19:29,001 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/May/2025 22:19:29] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=Q9FfRhWd1clofznlh7LQ HTTP/1.1" 200 -
+[ 2025-05-03 22:19:29,057 ] 97 werkzeug - INFO - 127.0.0.1 - - [03/May/2025 22:19:29] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

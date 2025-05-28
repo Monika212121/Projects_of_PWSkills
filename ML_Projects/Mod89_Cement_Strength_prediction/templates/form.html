@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cement Strength Prediction</title>
+  </head>
+  <body>
+    <h2>Enter Cement Mixture Details</h2>
+    <form action="{{ url_for('predict_datapoint') }}" method="POST">
+
+      <div class="form-group">
+        <label for="cement">Cement (component 1)(kg in a m^3 mixture):</label>
+        <input type="text" id="cement" name="Cement (component 1)(kg in a m^3 mixture)" placeholder="Enter Cement amount">
+      </div>
+
+      <div class="form-group">
+        <label for="slag">Blast Furnace Slag (component 2)(kg in a m^3 mixture):</label>
+        <input type="text" id="slag" name="Blast Furnace Slag (component 2)(kg in a m^3 mixture)" placeholder="Enter Slag amount">
+      </div>
+
+      <div class="form-group">
+        <label for="flyash">Fly Ash (component 3)(kg in a m^3 mixture):</label>
+        <input type="text" id="flyash" name="Fly Ash (component 3)(kg in a m^3 mixture)" placeholder="Enter Fly Ash amount">
+      </div>
+
+      <div class="form-group">
+        <label for="water">Water  (component 4)(kg in a m^3 mixture):</label>
+        <input type="text" id="water" name="Water (component 4)(kg in a m^3 mixture)" placeholder="Enter Water amount">
+      </div>
+
+      <div class="form-group">
+        <label for="superplasticizer">Superplasticizer (component 5)(kg in a m^3 mixture):</label>
+        <input type="text" id="superplasticizer" name="Superplasticizer (component 5)(kg in a m^3 mixture)" placeholder="Enter Superplasticizer amount">
+      </div>
+
+      <div class="form-group">
+        <label for="coarseagg">Coarse Aggregate  (component 6)(kg in a m^3 mixture):</label>
+        <input type="text" id="coarseagg" name="Coarse Aggregate (component 6)(kg in a m^3 mixture)" placeholder="Enter Coarse Aggregate amount">
+      </div>
+
+      <div class="form-group">
+        <label for="fineagg">Fine Aggregate (component 7)(kg in a m^3 mixture):</label>
+        <input type="text" id="fineagg" name="Fine Aggregate (component 7)(kg in a m^3 mixture)" placeholder="Enter Fine Aggregate amount">
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age (day):</label>
+        <input type="text" id="age" name="Age (day)" placeholder="Enter Age in days">
+      </div>
+
+      <input type="submit" value="Predict Strength">
+    </form>
+
+    <h3>{{ final_result }}</h3>
+  </body>
+</html>
